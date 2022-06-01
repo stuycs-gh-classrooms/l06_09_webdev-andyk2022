@@ -1,4 +1,4 @@
-var arr[];
+var arr;
 var pos;
 var testPos;
 var endPos; //last position needed to be tested
@@ -37,8 +37,8 @@ function draw() {
   }
 }
 
-int[] randomArray(int num) {
-  int[] values = new int[num];
+function randomArray(int num) {
+  var values = new int[num];
 
   for (int i=0; i<values.length; i++) {
     values[i] = int(random(100, 400));
@@ -46,10 +46,10 @@ int[] randomArray(int num) {
   return values;
 }//randomArray
 
-void displayArray(int[] arr, int p, int tp, int sp) {
-  int barWidth = width / arr.length;
-  int x = 0;
-  int y = 0;
+function displayArray(arr, int p, int tp, int sp) {
+  var barWidth = width / arr.length;
+  var x = 0;
+  var y = 0;
   noStroke();
   for (int i=0; i<arr.length; i++) {
     y = height - arr[i];
