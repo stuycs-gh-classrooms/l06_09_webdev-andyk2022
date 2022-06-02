@@ -36,7 +36,7 @@ function draw() {
   }
 }
 
-function randomArray(int num) {
+function randomArray(num) {
   var values = new int[num];
 
   for (int i = int(0); i < values.length; i++) {
@@ -45,10 +45,10 @@ function randomArray(int num) {
   return values;
 } //randomArray
 
-function displayArray(arr, int p, int tp, int sp) {
+function displayArray(arr, p, tp, sp) {
   var barWidth = width / arr.length;
-  var x = 0;
-  var y = 0;
+  var x = int(0);
+  var y = int(0);
   noStroke();
   for (int i = 0; i < arr.length; i++) {
     y = height - arr[i];
