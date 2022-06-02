@@ -4,15 +4,15 @@ function setup() {
   var arr = randomArray(10);
 
   var pos = 0;
-  var testPos = pos + int(1);
-  var endPos = arr.length - int(1);
+  var testPos = pos + 1;
+  var endPos = arr.length - 1;
 }
 
 function draw() {
   background('OOOOOO');
 
-  if (endPos == int(0)) {
-    displayArray(arr, int(-1), int(-1), int(-1));
+  if (endPos == 0) {
+    displayArray(arr, -1, -1), -1);
   } else {
     displayArray(arr, pos, testPos, endPos);
     if (arr[pos] > arr[testPos]) {
@@ -23,8 +23,8 @@ function draw() {
     }
 
     if (pos == endPos) {
-      pos = int(0);
-      testPos = int(1);
+      pos = 0;
+      testPos = 1;
       endPos--;
     }
   }
@@ -33,8 +33,8 @@ function draw() {
 function randomArray(num) {
   var values = new int[num];
 
-  for (let i = int(0); i < values.length; i++) {
-    values[i] = int(random(int(100), int(400)));
+  for (let i = 0; i < values.length; i++) {
+    values[i] = int(random(100, 400));
   } //random value loop
   return values;
 } //randomArray
