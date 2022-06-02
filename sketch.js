@@ -1,7 +1,7 @@
 function setup() {
   createCanvas(400, 400);
   background(0);
-  var arr = randomArray(10);
+  const arr = new Array(10);
 
   var pos = 0;
   var testPos = pos + 1;
@@ -31,7 +31,7 @@ function draw() {
 }
 
 function randomArray(num) {
-  var values = new int[num];
+  const value = new Array(num)
 
   for (let i = 0; i < values.length; i++) {
     values[i] = int(random(100, 400));
@@ -41,8 +41,8 @@ function randomArray(num) {
 
 function displayArray(arr, p, tp, sp) {
   var barWidth = width / arr.length;
-  var x = int(0);
-  var y = int(0);
+  var x = 0;
+  var y = 0;
   noStroke();
   for (let i = 0; i < arr.length; i++) {
     y = height - arr[i];
