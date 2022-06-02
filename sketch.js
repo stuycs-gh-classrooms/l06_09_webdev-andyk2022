@@ -39,7 +39,7 @@ function draw() {
 function randomArray(num) {
   var values = new int[num];
 
-  for (int i = int(0); i < values.length; i++) {
+  for (let i = int(0); i < values.length; i++) {
     values[i] = int(random(int(100), int(400)));
   } //random value loop
   return values;
@@ -50,7 +50,7 @@ function displayArray(arr, p, tp, sp) {
   var x = int(0);
   var y = int(0);
   noStroke();
-  for (int i = 0; i < arr.length; i++) {
+  for (let i = 0; i < arr.length; i++) {
     y = height - arr[i];
     if (i == p) {
       fill(230, 0, 230);
