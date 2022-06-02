@@ -1,17 +1,11 @@
-var arr;
-var pos;
-var testPos;
-var endPos; //last position needed to be tested
-
-
 function setup() {
   createCanvas(400, 400);
-  background(int(0));
-  arr = randomArray(int(10));
+  background(0);
+  var arr = randomArray(10);
 
-  pos = int(0);
-  testPos = pos + int(1);
-  endPos = arr.length - int(1);
+  var pos = 0;
+  var testPos = pos + int(1);
+  var endPos = arr.length - int(1);
 }
 
 function draw() {
