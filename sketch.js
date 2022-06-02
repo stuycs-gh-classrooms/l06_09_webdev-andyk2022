@@ -5,7 +5,7 @@ var endPos; //last position needed to be tested
 
 
 function setup() {
-  createCanvas(int(400), int(400));
+  createCanvas(400, 400);
   background(int(0));
   arr = randomArray(int(10));
 
